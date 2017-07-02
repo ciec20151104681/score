@@ -23,9 +23,6 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
     @IBOutlet weak var temp1: UITextField!
     @IBOutlet weak var temp2: UITextField!
     @IBOutlet weak var temp3: UITextField!
-
-   
-   
     @IBOutlet weak var Bimage: UIImageView!
     @IBOutlet weak var Aimage: UIImageView!
     @IBAction func photo1(_ sender: Any) {
@@ -48,7 +45,8 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
             }
         }
     }
-    
+   
+   
     
     @IBAction func photo2(_ sender: Any) {
         if dlg==0{
