@@ -85,7 +85,7 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
     }
     @IBAction func adda(_ sender: Any) {
         a=a+1
-        if( b<21 && a==22 || b>=21 && a-b==2 )
+        if( b<10 && a==11 || b>=10 && a-b==2 )
         {
             temp1.text="\("第" + String(c) + "局a胜" + String(a) + ":" + String(b))"
             array1[c-1] = a
@@ -115,7 +115,7 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
     
     @IBAction func addb(_ sender: Any) {
         b=b+1
-        if( a<21 && b==22 || a>=21 && b-a==2)
+        if( a<10 && b==11 || a>=10 && b-a==2)
         {
             temp1.text="\("第" + String(c) + "局b胜" + String(a) + ":" + String(b))"
             array1[c-1] = a
@@ -146,7 +146,7 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
         if(a>0)
         {
             a=a-1
-            if( a<21 && b==22 || a>=21 && b-a==2)
+            if( a<10 && b==11 || a>=10 && b-a==2)
             {
                 temp1.text="\("第" + String(c) + "局b胜" + String(a) + ":" + String(b))"
                 array1[c-1] = a
@@ -194,7 +194,7 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
         {
             b=b-1
              temp1.text="\( String(a) + ":" + String(b) )"
-            if( b<21 && a==22 || b>=21 && a-b==2 )
+            if( b<10 && a==11 || b>=10 && a-b==2 )
             {
                 temp1.text="\("第" + String(c) + "局a胜" + String(a) + ":" + String(b))"
                 array1[c-1] = a
